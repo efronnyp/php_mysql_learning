@@ -1,16 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "test123";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
-// Check connection
-if ($conn->connect_error) {
-	die("Connection failed: " . $conn->connect_error);
-}
-echo "Connected successfully";
+require_once 'connection.php';
 
 // Read php_mysql_test
 $result = $conn->query("SELECT * FROM php_mysql_test.siswa");
@@ -39,5 +28,6 @@ if (!$result) {
 		}
 		?>
 	</table>
+	<a href="insert.html"><button><u><font color="blue">Insert</font></u></button></a>
 </html>
 <?php $conn->close(); ?>
