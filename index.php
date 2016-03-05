@@ -11,7 +11,7 @@ if (!$result) {
 	<head>
 		<title>Mari Belajar Supaya Lulus</title>
 	</head>
-	<table border="1px">
+	<table border="1">
 		<tr>
 			<th width="25px">No.</th>
 			<th width="200px">Name</th>
@@ -28,6 +28,6 @@ if (!$result) {
 		}
 		?>
 	</table>
-	<a href="insert.html"><button><u><font color="blue">Insert</font></u></button></a>
+	<a href="insert.html"><button>Insert</button></a>
 </html>
 <?php $conn->close(); ?>
