@@ -19,12 +19,13 @@ if (!$result) {
 		</tr>
 		<?php
 		foreach ($result->fetch_all() as $currentItem) {
-			echo
-				"<tr>".
-					"<td>".$currentItem[0]."</td>".
-					"<td>".$currentItem[1]."</td>".
-					"<td>".$currentItem[2]."</td>".
-				"</tr>";
+		?>
+				<tr>
+					<td><?=$currentItem[0] ?></td>
+					<td><?=$currentItem[1] ?></td>
+					<td><?=$currentItem[2] ?></td>
+				</tr>
+		<?php
 		}
 		?>
 	</table>
