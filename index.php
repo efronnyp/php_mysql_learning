@@ -8,10 +8,17 @@ if (!$result) {
 }
 ?>
 <html>
-	<head>
-		<title>Mari Belajar Supaya Lulus</title>
-	</head>
-	<table border="1">
+<head>
+	<title>Mari Belajar Supaya Lulus</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+</head>
+<body>
+	<div style="height: 30px; margin: 10px 5px;">
+		<b>Edit Mode</b>
+		<input type="checkbox" name="my-checkbox">
+	</div>
+	<table id="tbl-mahasiswa" border="1">
 		<tr>
 			<th width="25px">No.</th>
 			<th width="200px">Name</th>
@@ -30,5 +37,9 @@ if (!$result) {
 		?>
 	</table>
 	<a href="insert.html"><button>Insert</button></a>
+	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/bootstrap-switch.min.js"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
 </html>
 <?php $conn->close(); ?>
