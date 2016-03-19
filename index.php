@@ -20,9 +20,9 @@ if (!$result) {
 	</div>
 	<table id="tbl-mahasiswa" border="1">
 		<tr>
-			<th width="25px">No.</th>
-			<th width="200px">Name</th>
-			<th width="80px">Nilai</th>
+			<td class="header" width="25px">No.</td>
+			<td class="header" width="200px">Name</td>
+			<td class="header" width="80px">Nilai</td>
 		</tr>
 		<?php
 		foreach ($result->fetch_all() as $currentItem) {
