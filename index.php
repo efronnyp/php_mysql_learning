@@ -37,7 +37,7 @@ if (!$result) {
 		?>
 	</table>
 	<a href="insert.html"><button>Insert</button></a>
-	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
 	<script src="js/bootstrap-switch.min.js"></script>
 	<script src="js/main.js" type="text/javascript"></script>
 </body>
